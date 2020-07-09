@@ -1,0 +1,5 @@
+Rizki Nur | gerdu rt 1 rw 5 giripurwo wonogiri | A | laki-laki | Bandung| 9 | 3 | 1999 | 1900018014 | Mahasiswa | Islam | Indonesia | Belum Kawin | Pembuatan SKCK
+Destriana Mutia Ayu Ningrum | Gerdu rt 01/rw 5 giripurwo wonogiri | B | perempuan | Pekanbaru| 21 | 12 | 1997 | 1700018012 | Guru SMA | Islam | Indonesia | Belum Kawin | Pembuatan KK
+test nama | test alamat | A | perempuan | tes tempat| 1 | 1 | 1111 | test no kk | test kerja | test agama | test warga | Kawin | Pembuatan SKU
+1 | 1 | A | laki-laki | 1| 1 | 1 | 1 | 1 | 1 | 1 | 1 | Belum Kawin | Pembuatan KTP
+2 | 2 | A | laki-laki | 2| 1 | 1 | 2 | 2 | 2 | 2 | 2 | Belum Kawin | Pembuatan KTP
