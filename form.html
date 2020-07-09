@@ -2,110 +2,249 @@
 <head>
 <title>Tugas #3 Form</title>
 <style>
-.tengah{
-	color:#fff;
-	padding:20px;
-	margin:10% 20% 0 20%;
-	background-color:#09C;
-	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
 textarea{
 	resize:none;
 }
+select{
+	width:13%;
+}
+.err{
+	color:#C30;
+}
+.ok{
+	color:#0F0;
+}
+#perlu{
+	width:70%;
+}
+.tengah{
+	width:50%;
+	height:auto;
+	background-color:#0CF;
+	padding:20px;
+	color:#fff;
+	margin:2% 150px 0 23%;
+	font-family:"Comic Sans MS", cursive;
+}
+.kiri{
+	width:100%;
+	color:#000;
+}
+.texta{
+	resize:none;
+	text-align:center;
+	width:90%;
+	min-height:150px;
+	border-radius:15px;
+	border-style:groove;
+}
+.but{
+	margin-top:1%;
+	padding:10px 80px;
+	color:#FFF;
+	border-radius:7px;
+	border-style:none;
+	background-color:#09F;
+}
+.kanan label{
+	max-width:20px;
+}
 </style>
 </head>
+
 <body>
-<div class="tengah">
-<form name="form1" method="post" action="form.php">
+<h1 align="center">Form Surat Keterangan Kelurahan</h1>
+<div class="tengah" align="center">
+<form name="form1" method="post" action="rizki - form.php">
+<div class="kiri">
+  <table width="auto">
+    <tr>
+      <td>Nama Lengkap</td>
+      <td> &nbsp;:        </td>
+      <td><input type="text" autocomplete="off" name="name" id="name">&nbsp;<a class="err" id="err1"></a></td>
+    </tr>
+       <tr>
+      <td>Jenis Kelamin</td>
+      <td> &nbsp;:</td>
+      <td><input type="radio" name="cowo" id="cowo" value="laki-laki" checked>
+        <label for="cowo9">Laki-laki
+          <input type="radio" name="cowo" id="cowo2" value="perempuan">
+        </label>
+        <label for="cowo10">Perempuan</label></td>
+    </tr>
+    <tr>
+      <td>Lahir </td>
+      <td>&nbsp;: </td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp; Tempat </td>
+      <td>&nbsp;:</td>
+      <td><input type="text" autocomplete="off" name="place" id="place">&nbsp;&nbsp;&nbsp; Gol Darah : <select name="blot" id="blot">&nbsp;<a class="err"  id="err2">aqweqweqws</a>
+      <option>A</option><option>B</option><option>O</option></td>
+    </tr>
+    <tr>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp; Tanggal</td>
+        <td>&nbsp;:</td><td><select name="day" id="day">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option>
+          <option>30</option>
+          <option>31</option>
+        </select>
+&nbsp;&nbsp;&nbsp;Bulan&nbsp;:
+<select name="day2" id="day2">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+  <option>7</option>
+  <option>8</option>
+  <option>9</option>
+  <option>10</option>
+  <option>11</option>
+  <option>12</option>
+</select>
+&nbsp;&nbsp;&nbsp;Tahun&nbsp;:
+<input name="year" type="text" autocomplete="off" id="year" size="6" maxlength="4"></td>
+    </tr>
+    <tr>
+      <td>No KK/KTP</td>
+      <td>&nbsp;:        </td>
+      <td><input type="text" autocomplete="off" name="ktp" id="ktp">&nbsp;<a class="err"  id="err3"></a></td>
+    </tr>
+     <tr>
+      <td>Pekerjaan</td>
+      <td>&nbsp;:        </td>
+      <td><input type="text" autocomplete="off" name="work" id="work">&nbsp;<a class="err"  id="err4"></a></td>
+    </tr>
+    <tr>
+      <td>Agama</td>
+      <td>&nbsp;:        </td>
+      <td><input type="text" autocomplete="off" name="religi" id="religi">&nbsp;<a class="err"  id="err5"></a></td>
+    </tr>
+    <tr>
+      <td>Kewarganegaraan</td>
+      <td>&nbsp;:        </td>
+      <td><input type="text" autocomplete="off" name="nation" id="nation">&nbsp;<a class="err"  id="err6"></a></td>
+    </tr>
+    <td>Status Perkawinan</td>
+      <td> &nbsp;:</td>
+      <td><input type="radio" name="kwn" id="kwn1" value="Belum Kawin" checked>
+        <label for="kwn1">Belum Kawin
+          <input type="radio" name="kwn" id="kwn2" value="Kawin">
+        </label>
+        <label for="kwn2">Kawin</label></td>
+    </tr>
+    <tr>
+      <td>Alamat</td>
+      <td valign="middle">&nbsp;:        </td>
+      <td valign="top" width="360"><textarea name="address" id="address" autocomplete="off" cols="42" rows="3"></textarea><a class="err" id="err7"></a></td>
+    </tr>
+    <tr>
+      <td>Keperluan Surat</td>
+      <td valign="middle">&nbsp;:        </td>
+      <td><select name="perlu" id="perlu">
+          <option>Pembuatan KTP</option>
+          <option>Pembuatan KK</option>
+          <option>Pembuatan SKCK</option>
+          <option>Pembuatan SKU</option>
+          <option>Surat Pengantar Ke Catatan Sipil</option>
+        </select></td>
+    </tr>
+</table>
   <p>
-    <label>Nama : </label>
-    <label for="name"></label>
-    <input type="text" autocomplete="off" name="name" id="name">
-  </p>
-  <p>Lahir &nbsp;: </p>
-  <p>&nbsp;&nbsp; Tempat &nbsp;&nbsp;: 
-    <label for="place"></label>
-    <input type="text" autocomplete="off" name="place" id="place">
-  </p>
-  <p>&nbsp;&nbsp; Tanggal &nbsp;: 
-    <label for="day"></label>
-    <select name="day" id="day">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-      <option>6</option>
-      <option>7</option>
-      <option>8</option>
-      <option>9</option>
-      <option>10</option>
-      <option>11</option>
-      <option>12</option>
-      <option>13</option>
-      <option>14</option>
-      <option>15</option>
-      <option>16</option>
-      <option>17</option>
-      <option>18</option>
-      <option>19</option>
-      <option>20</option>
-      <option>21</option>
-      <option>22</option>
-      <option>23</option>
-      <option>24</option>
-      <option>25</option>
-      <option>26</option>
-      <option>27</option>
-      <option>28</option>
-      <option>29</option>
-      <option>30</option>
-      <option>31</option>
-    </select>
-  Bulan : 
-  <select name="day2" id="day2">
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-    <option>5</option>
-    <option>6</option>
-    <option>7</option>
-    <option>8</option>
-    <option>9</option>
-    <option>10</option>
-    <option>11</option>
-    <option>12</option>
-  </select>
-  Tahun : 
-  <label for="year"></label>
-  <input name="year" type="text" autocomplete="off" id="year" size="5" maxlength="4">
-  </p>
-  <p>Gender: 
-    <input type="radio" name="radio" id="cowo" value="laki-laki">
-    <label for="cowo">Laki-laki</label>
-    <input type="radio" name="radio" id="cowo2" value="perempuan"> 
-    <label for="cowo2">Perempuan</label>
-  </p>
-  <p>Alamat: 
-    <label for="address"></label>
-    <textarea name="address" id="address" autocomplete="off" cols="45" rows="5"></textarea>
-  </p>
-  <p>Hobi &nbsp; : 
-    <input type="checkbox" name="hoby[]" id="hoby1" value="Bernafas">
-    <label for="hoby1">Bernafas</label>
-    <input type="checkbox" name="hoby[]" id="hoby2" value="Bergerak">
-    <label for="hoby2">Bergerak</label>
-    <input type="checkbox" name="hoby[]" id="hoby3" value="dan lain-lain">
-    <label for="hoby3">Lainnya</label>
-    <input name="isi" type="text" autocomplete="off" id="else" size="10">
-  </p>
-  <p>
-    <input type="submit" name="submit" id="submit" value="Simpan">
-    <input type="submit" name="cancel" id="cancel" value="Batal">
+  	<input type="button" onClick="cek()" name="lihat" id="lihat" value="Cek">
+    <input type="submit"  name="submit" id="submit" disabled value="Proses">
+    <input type="reset" name="cancel" id="cancel" value="Batal">
     <label for="tes"></label>
-  </p>
+</p>
+</div>
 </form>
 </div>
+<script>
+
+	
+function cek(){
+	var nm,th,kk,kerja,aga,warga,alam,text;
+	var nmerr,therr,kkerr,kerjaerr,agaerr,wargaerr,alamerr;
+	nm = document.getElementById("name").value;
+	th = document.getElementById("year").value;
+	kk = document.getElementById("ktp").value;
+	kerja = document.getElementById("work").value;
+	aga = document.getElementById("religi").value;
+	warga = document.getElementById("nation").value;
+	alam = document.getElementById("address").value;
+  if(nm == ""){
+    nmerr = "&#10008;";
+	document.getElementById("err1").innerHTML = nmerr;
+  }else{
+	nmerr = "&#10004;";
+	document.getElementById("err1").innerHTML = nmerr;
+  }if(kk == ""){
+    kkerr = "&#10008;";
+	document.getElementById("err3").innerHTML = kkerr;
+  }else{
+	kkerr = "&#10004;";
+	document.getElementById("err3").innerHTML = kkerr;
+  }if(kerja == ""){
+    kerjaerr = "&#10008;";
+	document.getElementById("err4").innerHTML = kerjaerr;
+  }else{
+	kerjaerr = "&#10004;";
+	document.getElementById("err4").innerHTML = kerjaerr;
+  }if(aga == ""){
+    agaerr = "&#10008;";
+	document.getElementById("err5").innerHTML = agaerr;
+  }else{
+    agaerr = "&#10004;";
+	document.getElementById("err5").innerHTML = agaerr;
+  }if(warga == ""){
+    wargaerr = "&#10008;";
+	document.getElementById("err6").innerHTML = wargaerr;
+  }else{    
+  	wargaerr = "&#10004;";
+	document.getElementById("err6").innerHTML = wargaerr;
+  }if(alam == ""){
+    alamerr = "&#10008;";
+	document.getElementById("err7").innerHTML = alamerr;
+  }else{
+	alamerr = "&#10004;";
+	document.getElementById("err7").innerHTML = alamerr;
+  }
+  if(nm = kk = kerja = aga = warga = alam != ""){
+	  document.getElementById('submit').disabled = false;
+  }
+}
+
+</script>
 </body>
 </html>
